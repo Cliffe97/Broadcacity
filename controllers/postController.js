@@ -32,7 +32,8 @@ exports.savePost = ( req, res ) => {
   //console.dir(req)
   let newPost = new SinglePost( {
     type: req.body.postType,
-    code: req.body.code
+    code: req.body.code,
+    content: req.body.content
   } )
 
   console.log("posts = "+newPost)
