@@ -16,6 +16,11 @@ a {
   font: 20pt cursive;
   color: Black;
 }
+[species = 'cursive3']{
+  font: 24pt cursive;
+  color: Pink;
+}
+
 
 [species = 'font1']{
   font: 15pt;

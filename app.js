@@ -60,6 +60,26 @@ app.get('/loginerror', function(req,res){
 })
 
 
+app.use((req,res,next) => {
+  console.log("middleware to set loggedIn is being run")
+  console.log(req.user)
+  res.locals.loggedIn = false
+  if (req.isAuthenticated()){
+    console.log("user has been Authenticated")
+    res.locals.user = req.user
+    res.locals.loggedIn = true
+    if (req.user){
+      if (req.user.googleemail=='tjhickey@brandeis.edu'){
+        console.log("Owner has logged in")
+        res.locals.status = 'teacher'
+      } else {
+        console.log('student has logged in')
+        res.locals.status = 'student'
+      }
+    }
+  }
+  next()
+})
 
 
 
