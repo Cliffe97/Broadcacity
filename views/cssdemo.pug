@@ -1,0 +1,18 @@
+extends layoutBS
+
+block content
+  h1 CSS Demo
+  p Welcome to #{title}
+  .container
+    form
+      .form-group
+          label(for="exampleFormControlFile1") Example file input
+          input#exampleFormControlFile1.form-control-file(type="file")
+
+    .row
+      .blue.col-2
+        | One of three columns
+      .red.col-8
+        | One of three columns
+      .green.col-2
+        | One of three columns

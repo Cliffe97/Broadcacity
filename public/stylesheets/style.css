@@ -1,0 +1,49 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #4253F4;
+}
+
+[species = 'cursive']{
+  font: 24pt cursive;
+  color: black;
+}
+
+[species = 'cursive2']{
+  font: 20pt cursive;
+  color: Black;
+}
+
+[species = 'font1']{
+  font: 15pt;
+  color: black;
+  font-weight: bold;
+}
+
+.imgCenter{
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  width: 100%
+}
+
+.imgLeft{
+  display: block;
+  margin-left: ;
+  margin-right: auto;
+  width:50%
+}
+
+.imgRight{
+  display: block;
+  margin-left:auto ;
+  margin-right:;
+  width:50%
+}
+
+.bc{
+  background-image: url(/images/wall.jpg);
+}

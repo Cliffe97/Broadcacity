@@ -1,0 +1,34 @@
+extends layoutBS
+
+block content
+  center
+    h1(species = 'cursive' ) Sign up today to let your voice be heard!
+
+  br
+  br
+  br
+  body
+
+  a.btn.btn-primary(href="/auth/google")
+    span.fa.fa-google-plus  Login with GOOGLE (recommended)
+  hr
+
+  form(species = 'font1')
+    .form-group
+      label(for="exampleInputEmail1") User name
+      input#exampleInputEmail1.form-control(type="email" aria-describedby="emailHelp" placeholder="Enter name")
+    .form-group
+      label(for="exampleInputEmail1") Email address
+      input#exampleInputEmail1.form-control(type="email" aria-describedby="emailHelp" placeholder="Enter email")
+      small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+    .form-group
+      label(for="exampleInputPassword1") Password
+      input#exampleInputPassword1.form-control(type="password" placeholder="Password")
+    .form-group
+      label(for="exampleInputPassword1") Confirm Password
+      input#exampleInputPassword1.form-control(type="password" placeholder="Password")
+    a(href = "http://brandeis.edu") Terms&Conditions
+    .form-group.form-check
+      input#exampleCheck1.form-check-input(type="checkbox")
+      label.form-check-label(for="exampleCheck1") Agree to the terms
+    button.btn.btn-primary(type="submit") Submit
