@@ -8,6 +8,11 @@ block content
   br
   body
     form(method="post" action = "/savePost" species = 'font1')
+      .formGroup
+        label student name
+        br
+        input(type="text" name="student" readonly="true" value=user.googleemail)
+
       label.my-1.mr-2(for="inlineFormCustomSelectPref") Type of the post
       select(name="postType")#inlineFormCustomSelectPref.custom-select.my-1.mr-sm-2
         option(selected="") Choose...
