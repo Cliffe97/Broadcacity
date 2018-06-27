@@ -68,7 +68,6 @@ app.use((req,res,next) => {
     console.log("user has been Authenticated")
     res.locals.user = req.user
     res.locals.loggedIn = true
-    res.redirect('/post');
     if (req.user){
       if (req.user.googleemail=='tjhickey@brandeis.edu'){
         console.log("Owner has logged in")
