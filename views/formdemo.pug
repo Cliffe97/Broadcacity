@@ -10,8 +10,9 @@ block content
       each s in posts
         li
           input(name="deleteName" value=s._id type="checkbox")
-          e Type: #{s.type} --
-          i Area: #{s.code} --
+          e User: #{user.googleemail}
+          i Type: #{s.type} --
+          e Area: #{s.code} --
           br
-          e #{s.content}
+          i #{s.content}
     input(type="submit" value="Delete checked items")
